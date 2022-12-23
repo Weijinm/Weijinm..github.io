@@ -4,6 +4,63 @@
   
     
     <entry>
+      <title>课程复习：嵌入式软件开发-08编译器gcc</title>
+      <link href="/2022/12/23/0002-08/"/>
+      <url>/2022/12/23/0002-08/</url>
+      
+        <content type="html"><![CDATA[<h2 id="gcc简介"><a href="#gcc简介" class="headerlink" title="gcc简介"></a>gcc简介</h2><ul><li><p>能够编译c、c++、Object C， 通过前端模块扩展还可支持java、fortran、pascal、ada、modula-3等。</p></li><li><p>提供了30多条警告信息和3个警告级别</p></li><li><p>gcc和g++，是同一个编译器，只不过配置方式不同。<em>当你的程序中出现using namespace std等带有C++特性的语句时，如果用gcc编译，必须显式指明这个程序要用C++标准库编译。而g++可以直接编译</em></p></li><li><p>gcc是高效的编辑器，编译出来的文件占用空间小。</p></li><li><p>gcc编译器支持的文件类型如下图</p></li></ul><p><img src="/img/page-2/page-8-1.jpg"></p><hr><h2 id="使用gcc"><a href="#使用gcc" class="headerlink" title="使用gcc"></a>使用gcc</h2><p>使用gcc进行程序编译时，分为四个阶段：<em>（程序员可以根据需要在任何一阶段停止）</em></p><ul><li><strong>预处理（pre-processing）</strong>：调用预处理程序cpp进行预处理，负责展开宏、插入头文件等；<br>  <code>gcc –E hello.c –o hello.i</code></li><li><strong>编译（compiling）</strong>：调用cc1，把预处理后的文件编译为汇编文件；<br>  <code>gcc –S hello.c –o hello.s</code></li><li><strong>汇编（assembling）</strong>：调用as，把汇编程序汇编为目标文件；<br>  <code>gcc –c hello.c –o hello.o</code></li><li><strong>链接（linking）</strong>：调用链接程序ld，把目标代码链接为可执行文件。<br>  <code>gcc hello.c –o hello</code></li></ul><h2 id="警告提示功能"><a href="#警告提示功能" class="headerlink" title="警告提示功能"></a>警告提示功能</h2><p>gcc包含30多个警告和3个警告级别。</p><ul><li>使用gcc的-pedantic选项，可以找到不符合ANSI&#x2F;ISO标准的语句（并非全部）；</li><li>使用gcc的-Wall选项，可以显示尽可能多的警告。</li><li>使用gcc的-Werror选项，可以将警告当作错误，并停止编译。</li></ul><p><img src="/img/page-2/page-8-2.jpg"></p><h2 id="常用选项"><a href="#常用选项" class="headerlink" title="常用选项"></a>常用选项</h2><p>这里的选项都是常用的，包括上面提到的那些。</p><p><img src="/img/page-2/page-8-3.jpg"><br><img src="/img/page-2/page-8-4.jpg"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习, 嵌入式相关 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程复习：嵌入式软件开发-08编译器gcc</title>
+      <link href="/2022/12/23/0002-09/"/>
+      <url>/2022/12/23/0002-09/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习, 嵌入式相关 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>寄了</title>
+      <link href="/2022/12/23/0003/"/>
+      <url>/2022/12/23/0003/</url>
+      
+        <content type="html"><![CDATA[<p>dameda<br>扛不牢了，免疫系统开杀了，看不f动了<br>我明天看看笔记有没有存货，代码住宿舍啥的，发点出来<br>只能帮i您们到这里了，我先歇会额</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 阳 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>课程复习：嵌入式软件开发-03嵌入式C编程综述</title>
       <link href="/2022/12/22/0002-03/"/>
       <url>/2022/12/22/0002-03/</url>
@@ -23,11 +80,11 @@
     
     
     <entry>
-      <title>课程复习：嵌入式软件开发-04C语言编程规范&amp;05嵌入式C程序设计测试题&amp;06Linux基础</title>
+      <title>课程复习：嵌入式软件开发-04、05、06、07</title>
       <link href="/2022/12/22/0002-040506/"/>
       <url>/2022/12/22/0002-040506/</url>
       
-        <content type="html"><![CDATA[<p>个人认为04并非考试重点，自己看ppt过一下就可以了。<br>04代码也不用详细看，反正理解一下规则。<br><strong>这部分不用细看，快速过一下就好</strong></p><hr><p>05的话多看看理解一下，基本都有详解，没有详解的地方也很容易查到。<br><strong>这部分理解一下</strong></p><hr><p>06这一部分也就开头废话多点，其他部分稍微记着点，可能考选择题啥的。<br>笔记也没啥好写的，要写的话东西太多了，基本都在PPT上了。<br><strong>这部分稍微记一下</strong></p><blockquote><p>shell是操作系统的高级接口</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>个人认为04并非考试重点，自己看ppt过一下就可以了。<br>04代码也不用详细看，反正理解一下规则。<br><strong>这部分不用细看，快速过一下就好</strong></p><hr><p>05的话多看看理解一下，基本都有详解，没有详解的地方也很容易查到。<br><strong>这部分理解一下</strong></p><hr><p>06这一部分也就开头废话多点，其他部分稍微记着点，可能考选择题啥的。<br>笔记也没啥好写的，要写的话东西太多了，基本都在PPT上了。<br><strong>这部分稍微记一下</strong></p><blockquote><p>shell是操作系统的高级接口</p></blockquote><hr><p>07也是没什么好记的，自己跳着看吧<br>像什么安装过程啊这种东西，大概不会考，多跳点。</p>]]></content>
       
       
       
